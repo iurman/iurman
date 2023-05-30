@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Isaac</h1>
 <h3 align="center">An AI enthusiast and student at WIT</h3>
 
-- 🔭 I’m currently working on [LAP: Lift and Progress](https://github.com/iurman/lap-fitness)
+- 🔭 I’m currently working on [LAP: Lift and Progress](https://github.com/iurman/lap-fitness) and [My Portfolio](https://github.com/iurman/iu-portfolio)
 
 - 🌱 I’m currently learning **Operating Systems, Parallel Computing, and discord.py**
 
