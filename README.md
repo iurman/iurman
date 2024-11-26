@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Isaac</h1>
 <h3 align="center">An AI enthusiast and graduate at WIT with a B.S. in Computer Science and a Data Science Minor</h3>
 
-- 🔭 I’m currently working on [LAP: Lift and Progress](https://github.com/iurman/lap-fitness) and [My Portfolio](https://github.com/iurman/iu-portfolio)
+- 🔭 I’m currently working on [My Portfolio](https://github.com/iurman/iu-portfolio)
 
 - 🌱 I’m currently learning **DataBricks, AWS, and Next.js**
 
