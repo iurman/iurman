@@ -3,9 +3,9 @@
 
 - 🔭 I’m currently working on [LAP: Lift and Progress](https://github.com/iurman/lap-fitness) and [My Portfolio](https://github.com/iurman/iu-portfolio)
 
-- 🌱 I’m currently learning **Operating Systems, Parallel Computing, and discord.py**
+- 🌱 I’m currently learning **DataBricks, AWS, and Next.js**
 
-- 📫 How to reach me **urmani#8188 on Discord or urmani@wit.edu**
+- 📫 How to reach me **urmani#8188 on Discord or isaacurman@yahoo.com**
 
 - ⚡ Fun fact **I can play about 20 different musical instruments**
 
