@@ -79,12 +79,16 @@ mistakes I now design around.
 
 ### `$ tail -n 4 ~/blog.log`
 
+<!-- WRITING:START -->
+
 ```
-2026-07-30  Rebuilding Ephemera as a zero-knowledge secret sharing app
-2026-07-03  Agentic coding in a production monorepo
+2026-07-30  Rebuilding Ephemera as a Zero-Knowledge Secret Sharing App
+2026-07-03  Agentic Coding in a Production Monorepo: The Harness Matters More Than the Model
 2026-01-29  Deploying Ephemera with Coolify and Traefik
-2026-01-20  Building ResuPals, a privacy-first resume builder
+2026-01-20  Building ResuPals - A Privacy-First Resume Builder
 ```
+
+<!-- WRITING:END -->
 
 [Read them at isaacurman.com/blog](https://isaacurman.com/blog)
 

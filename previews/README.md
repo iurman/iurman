@@ -64,6 +64,46 @@ else depends on them.
 
 ---
 
+## The Writing section updates itself
+
+`scripts/update-writing.mjs` reads <https://isaacurman.com/feed.xml> and rewrites whatever sits
+between these two comments:
+
+```
+<!-- WRITING:START -->
+<!-- WRITING:END -->
+```
+
+All four files already have them, so the section stays current without you touching it.
+`.github/workflows/update-writing.yml` runs it daily at 06:00 UTC, on manual dispatch, and on a
+`blog-updated` repository dispatch. It commits only when the list actually changed.
+
+Run it yourself any time:
+
+```bash
+node scripts/update-writing.mjs README.md              # markdown bullets
+node scripts/update-writing.mjs --format=log FILE.md   # dated code block, for variant B
+POST_COUNT=6 node scripts/update-writing.mjs           # show six instead of four
+```
+
+If the feed 404s, times out, or parses to zero posts, the script exits 1 **without writing
+anything**, so a bad fetch fails the workflow loudly instead of blanking your README.
+
+Four things to know:
+
+1. **Scheduled workflows only run from the default branch.** The cron does nothing until you merge
+   this branch to `main`.
+2. **If you pick variant B**, change the workflow's script line to
+   `node scripts/update-writing.mjs --format=log README.md`.
+3. **GitHub disables cron on repos with 60 days of no activity** and emails you about it. Posting
+   triggers a commit, which resets the clock, so this only bites during a long writing gap.
+4. **Cron is best-effort** and often runs late under load. If you want the README to update the
+   moment a post goes live, have the portfolio's deploy step fire the repository dispatch. The
+   `curl` for it is commented at the top of the workflow file, and it needs a fine-grained PAT
+   scoped to `contents:write` on `iurman/iurman` only.
+
+---
+
 ## What changed from the old README
 
 | Old | New | Why |
