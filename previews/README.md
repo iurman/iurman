@@ -1,77 +1,92 @@
-# README variants — preview & pick
+# README variants
 
-Three complete profile READMEs, all built from your portfolio's actual content and palette
-(`#040403` void · `#32746D` accent · `#89AAE6` electric · `#FFC4D1` ember · Syne/Outfit/Fira Code voice).
+Three complete profile READMEs, built from your portfolio's content and palette
+(`#040403` void, `#32746D` accent, `#89AAE6` electric, `#FFC4D1` ember).
+
+All three keep your devicon row and the space-themed banner art. None of them use em dashes, and
+the copy is plain: no night-sky metaphors, no sign-off tagline.
 
 | | Variant | The hook | Best if |
 | :-- | :-- | :-- | :-- |
-| **A** | [Night Sky](variant-a-night-sky.md) | Custom animated SVG banner — starfield, orbit rings, an event horizon, your gradient rule | You want the profile to feel like an extension of isaacurman.com |
-| **B** | [Terminal](variant-b-terminal.md) | Animated terminal-window banner + a real `neofetch` block; every section is a shell command | You want it to read like *you run infrastructure*, because you do |
-| **C** | [Systems Map](variant-c-systems-map.md) | A Mermaid diagram of the whole column you own, product → infra, with a "3 a.m. pager" feedback edge; depth hidden in `<details>` | You want the most information density and the strongest single idea |
+| **A** | [Night Sky](variant-a-night-sky.md) | Custom animated banner: starfield, orbit rings, a black hole, your gradient rule | You want the profile to feel like an extension of isaacurman.com |
+| **B** | [Terminal](variant-b-terminal.md) | Animated terminal-window banner and a real `neofetch` block. Every section is a shell command | You want it to read like you run infrastructure, because you do |
+| **C** | [Systems Map](variant-c-systems-map.md) | A Mermaid diagram of the whole column you own, product down to infra, with a pager edge looping back. Depth hidden in `<details>` | You want the most information density and the strongest single idea |
 
-Plus [`blocks.md`](blocks.md) — optional modules (stat cards, snake, badges, your original devicon
-row) with honest notes on which ones are actually reliable.
+[`blocks.md`](blocks.md) has optional modules: stat cards, the contribution snake, badge rows, and
+the ASCII stack tree that variant B used before the icons went back in.
 
 ---
 
 ## How to preview
 
-**Easiest — right here.** GitHub renders these files exactly as it renders a profile README:
-the SVG banners animate, the Mermaid diagram draws, tables and `<details>` behave identically.
-Click a variant link above.
+GitHub renders these files exactly as it renders a profile README. The banners animate, the Mermaid
+diagram draws, tables and `<details>` behave the same. Click a variant link above.
 
-**To iterate.** Edit any variant file, push, and refresh the page. Same rendering.
+To iterate, edit a variant file, push, and refresh the page.
 
-**To tweak without pushing.** Paste the file's contents into any of these:
-- <https://github.com/iurman/iurman/edit/main/README.md> → **Preview** tab (closest to the real thing; don't commit until you're happy)
-- A [new secret gist](https://gist.github.com) — instant render, throwaway
-- Any new issue's comment box → **Preview** tab
+To tweak without pushing, paste the file contents into any of these:
 
-⚠️ Two things behave differently in the *profile* README specifically:
+- <https://github.com/iurman/iurman/edit/main/README.md>, then the **Preview** tab. Closest to the
+  real thing. Don't commit until you're happy.
+- A [new secret gist](https://gist.github.com). Instant render, throwaway.
+- Any new issue's comment box, then the **Preview** tab.
+
+Two things behave differently in the profile README specifically:
+
 1. **Image paths.** Files here use `../assets/…` so they preview from this folder. The root
-   `README.md` uses absolute `https://raw.githubusercontent.com/iurman/iurman/main/assets/…`
-   URLs, because relative paths are less reliable when GitHub renders the README on your
-   profile page rather than inside the repo. Keep the absolute form at the root.
-2. **Mermaid** renders on your profile, but it inherits the *viewer's* GitHub theme — so check
-   variant C in both light and dark mode before shipping it.
+   `README.md` uses absolute `https://raw.githubusercontent.com/iurman/iurman/main/assets/…` URLs,
+   because relative paths are less reliable when GitHub renders the README on your profile page
+   instead of inside the repo. Keep the absolute form at the root.
+2. **Mermaid** inherits the viewer's GitHub theme, so check variant C in light mode too before
+   shipping it.
 
 ---
 
 ## How to ship
 
-The root [`README.md`](../README.md) of this branch is already set to **Variant A**. So:
+The root [`README.md`](../README.md) on this branch is already variant A. To switch:
 
 ```bash
-# swap the pick
 cp previews/variant-b-terminal.md README.md   # or variant-c-systems-map.md
-
-# then fix the two image paths back to absolute (variants B and A only)
-# ../assets/  ->  https://raw.githubusercontent.com/iurman/iurman/main/assets/
 ```
 
-Merge the branch to `main` and the profile updates immediately.
+Then change the image path back to absolute:
 
-The banner SVGs won't render in the root README until they exist on `main` — that's expected on
-this branch, and resolves the moment you merge.
+```
+../assets/  ->  https://raw.githubusercontent.com/iurman/iurman/main/assets/
+```
 
-**Optional cleanup:** once you've picked one, `rm -rf previews/` and delete the unused banner from
-`assets/`. Nothing else in the repo depends on them.
+Merge to `main` and the profile updates. The banner SVGs won't render in the root README until
+they exist on `main`, which is expected on this branch and resolves when you merge.
+
+Once you've picked one, `rm -rf previews/` and delete the unused banner from `assets/`. Nothing
+else depends on them.
 
 ---
 
-## What changed vs. the old README, and why
+## What changed from the old README
 
-Researched against what currently reads as *authored* versus *generated* on GitHub profiles:
-
-| Old | New | Reason |
+| Old | New | Why |
 | :-- | :-- | :-- |
-| `# Hi 👋, I'm Isaac` | A banner or a claim | The single most common opening line on GitHub; it burns your best line of screen space on a greeting |
-| `🔭 🛠️ 🎓 ⚡` emoji bullets | Structured "Currently" list | That emoji set is the literal GitHub default template |
-| 22 uniform 40px devicons | Grouped stack tables | Icon walls flatten hierarchy — Git and Kubernetes get equal weight — and are the top "generated profile" tell. Preserved in `blocks.md` if you want it back |
-| "Senior Software Engineer Team Lead" | "Product Engineer & Team Lead" | Matches how you actually position yourself on the site |
-| Ephemera: "temporary content sharing" | "zero-knowledge, AES-256-GCM in the browser" | You rebuilt it; the old copy predates that |
-| No mention of the homelab or hosting business | Front and center | It's your most distinctive credential and the *why* behind how you build. It was missing entirely |
-| No writing section | 4 recent posts | You publish regularly; the profile didn't say so |
+| `# Hi 👋, I'm Isaac` | The banner | It's the most common opening line on GitHub, and it spends your best line of screen space on a greeting |
+| `🔭 🛠️ 🎓 ⚡` emoji bullets | Prose | That exact emoji set is the GitHub default template |
+| "Senior Software Engineer Team Lead" | "Product Engineer & Team Lead" | Matches how you position yourself on the site |
+| Ephemera: "temporary content sharing" | Encrypted in the browser, expires by time or view count | You rebuilt it. The old copy predates that |
+| ResuPals: "runs entirely in-browser" | Guest mode is local, sign-in syncs to your private cloud | The repo has D1 and cloud sync. See the note below |
+| No mention of the homelab or hosting business | In the intro of all three | It's your most distinctive credential and it was missing entirely |
+| No writing section | Four recent posts | You publish regularly and the profile didn't say so |
+| 23 devicons | Same 23 devicons | Kept at your request |
 
-Everything is sourced from `iurman/portfolio` (`src/lib/config.ts`, `content/projects`,
-`content/posts`) — so if it's wrong there, it's wrong here too.
+### One accuracy note
+
+The first draft said ResuPals "runs entirely in the browser, nothing leaves the tab." Reading
+`iurman/resupals` shows that's true for guest mode only: `localStorage`, no account, no server
+calls. Signed-in users sync to D1 on Cloudflare, and AI job tailoring on paid plans sends the job
+description out by design. All three variants now say guest mode is local and sign-in syncs.
+
+Two smaller things from the same read: the ResuPals stack in your portfolio frontmatter lists
+`Next.js, TypeScript, Tailwind, TipTap, dnd-kit`, but the repo also runs on Cloudflare Workers with
+D1 and Drizzle, so the variants list those. Your portfolio project entry may be worth updating too.
+
+Everything else is sourced from `iurman/portfolio` (`src/lib/config.ts`, `content/projects`,
+`content/posts`). If it's wrong there, it's wrong here.
