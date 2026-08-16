@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Isaac Urman — Product Engineer">
+  <title>Isaac Urman — Product Engineer</title>
+  <defs>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#32746D"/>
+      <stop offset="60%" stop-color="#89AAE6"/>
+      <stop offset="100%" stop-color="#FFC4D1"/>
+    </linearGradient>
+    <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#32746D" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#32746D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#89AAE6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#89AAE6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#040403"/>
+      <stop offset="72%" stop-color="#040403"/>
+      <stop offset="100%" stop-color="#FFC4D1" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <!-- deep space -->
+  <rect width="1200" height="280" fill="#040403"/>
+  <ellipse cx="215" cy="235" rx="380" ry="215" fill="url(#glowTeal)"/>
+  <ellipse cx="1010" cy="55" rx="330" ry="200" fill="url(#glowBlue)"/>
+
+  <!-- starfield -->
+  <g fill="#F5F9E9">
+    <circle cx="58"   cy="44"  r="1.1" opacity="0.55"/>
+    <circle cx="126"  cy="196" r="0.9" opacity="0.40"/>
+    <circle cx="171"  cy="82"  r="1.4" opacity="0.75"/>
+    <circle cx="233"  cy="151" r="0.8" opacity="0.35"/>
+    <circle cx="291"  cy="34"  r="1.2" opacity="0.60"/>
+    <circle cx="318"  cy="243" r="1.0" opacity="0.45"/>
+    <circle cx="377"  cy="112" r="0.9" opacity="0.38"/>
+    <circle cx="424"  cy="62"  r="1.5" opacity="0.80"/>
+    <circle cx="468"  cy="221" r="0.8" opacity="0.32"/>
+    <circle cx="512"  cy="28"  r="1.0" opacity="0.50"/>
+    <circle cx="576"  cy="252" r="1.2" opacity="0.55"/>
+    <circle cx="629"  cy="47"  r="0.9" opacity="0.42"/>
+    <circle cx="688"  cy="232" r="1.3" opacity="0.62"/>
+    <circle cx="741"  cy="93"  r="0.8" opacity="0.34"/>
+    <circle cx="799"  cy="38"  r="1.1" opacity="0.58"/>
+    <circle cx="846"  cy="247" r="0.9" opacity="0.40"/>
+    <circle cx="904"  cy="128" r="1.4" opacity="0.70"/>
+    <circle cx="947"  cy="59"  r="0.8" opacity="0.36"/>
+    <circle cx="1006" cy="211" r="1.2" opacity="0.55"/>
+    <circle cx="1058" cy="31"  r="0.9" opacity="0.44"/>
+    <circle cx="1102" cy="163" r="1.3" opacity="0.65"/>
+    <circle cx="1148" cy="88"  r="0.8" opacity="0.33"/>
+    <circle cx="1171" cy="238" r="1.0" opacity="0.48"/>
+    <circle cx="88"   cy="128" r="0.8" opacity="0.30"/>
+    <circle cx="352"  cy="177" r="0.8" opacity="0.30"/>
+    <circle cx="661"  cy="146" r="0.8" opacity="0.28"/>
+    <circle cx="977"  cy="171" r="0.8" opacity="0.30"/>
+  </g>
+
+  <!-- twinkling stars -->
+  <g fill="#F5F9E9">
+    <circle cx="147" cy="243" r="1.6">
+      <animate attributeName="opacity" values="0.15;0.95;0.15" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="486" cy="97" r="1.5">
+      <animate attributeName="opacity" values="0.9;0.18;0.9" dur="5.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="762" cy="206" r="1.7">
+      <animate attributeName="opacity" values="0.2;0.85;0.2" dur="6.4s" begin="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1064" cy="112" r="1.5">
+      <animate attributeName="opacity" values="0.85;0.2;0.85" dur="4.8s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="264" cy="66" r="1.4">
+      <animate attributeName="opacity" values="0.25;0.9;0.25" dur="7.1s" begin="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- orbit -->
+  <g transform="translate(600 152) rotate(-14)">
+    <ellipse rx="452" ry="104" fill="none" stroke="#32746D" stroke-opacity="0.24" stroke-width="1"/>
+    <ellipse rx="378" ry="80" fill="none" stroke="#89AAE6" stroke-opacity="0.11" stroke-width="1"/>
+  </g>
+
+  <!-- event horizon -->
+  <g transform="translate(1094 216)">
+    <circle r="26" fill="url(#core)"/>
+    <circle r="17.5" fill="none" stroke="#FFC4D1" stroke-opacity="0.30" stroke-width="1"/>
+  </g>
+
+  <!-- accent rule (mirrors the portfolio hero) -->
+  <rect x="540" y="62" width="120" height="3" rx="1.5" fill="url(#rule)"/>
+
+  <!-- wordmark -->
+  <text x="600" y="146" text-anchor="middle" fill="#F5F9E9"
+        font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="9">ISAAC URMAN</text>
+
+  <text x="600" y="185" text-anchor="middle" fill="#89AAE6"
+        font-family="ui-monospace,'SF Mono','Cascadia Mono',Menlo,Consolas,monospace" font-size="17" letter-spacing="7">PRODUCT ENGINEER &#183; TEAM LEAD</text>
+
+  <text x="600" y="226" text-anchor="middle" fill="#7b7e75"
+        font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" letter-spacing="1.2">the app &#183; the systems behind it &#183; the infrastructure it runs on</text>
+</svg>

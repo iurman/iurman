@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/iurman/iurman/main/assets/banner-night-sky.svg" alt="Isaac Urman — Product Engineer &amp; Team Lead" width="100%">
+<img src="../assets/banner-night-sky.svg" alt="Isaac Urman — Product Engineer &amp; Team Lead" width="100%">
 
 <p>
   <a href="https://isaacurman.com"><b>Portfolio</b></a>
