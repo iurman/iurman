@@ -68,10 +68,10 @@ I also play about 20 different instruments.
 
 <!-- WRITING:START -->
 
-- [Rebuilding Ephemera as a Zero-Knowledge Secret Sharing App](https://isaacurman.com/blog/rebuilding-ephemera-zero-knowledge)
-- [Agentic Coding in a Production Monorepo: The Harness Matters More Than the Model](https://isaacurman.com/blog/agentic-coding-in-production)
-- [Deploying Ephemera with Coolify and Traefik](https://isaacurman.com/blog/deploying-ephemera-coolify-traefik)
-- [Building ResuPals - A Privacy-First Resume Builder](https://isaacurman.com/blog/building-resupals-privacy-first-resume-builder)
+- [Building an App That Refuses to Guess](https://isaacurman.com/blog/an-app-that-refuses-to-guess)
+- [What Launching Billing Taught Me About Getting Paid](https://isaacurman.com/blog/what-launching-billing-taught-me)
+- [Taking the Machine Fingerprint Off Agent Output](https://isaacurman.com/blog/taking-the-machine-fingerprint-off-agent-output)
+- [Electra v1: The Agent Orchestrator I Built to Find Out What I Wanted](https://isaacurman.com/blog/alpha-agent-orchestrator-electra-v1)
 
 <!-- WRITING:END -->
 
